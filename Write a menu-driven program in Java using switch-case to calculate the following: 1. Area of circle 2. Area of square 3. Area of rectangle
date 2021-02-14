@@ -1,0 +1,47 @@
+//Write a menu-driven program in Java using switch-case to calculate the
+//following:
+//1. Area of circle
+//2. Area of square
+//3. Area of rectangle
+//soln
+import java.util.Scanner;
+public class Switch{
+	public static void main(String[]args)
+	{
+	Scanner sc=new Scanner(System.in);
+	System.out.println("MENU");
+	System.out.println("enter c for the circle");
+	System.out.println("enter r for the Rectangle");
+	System.out.println("enter t for the triangle");
+	char shape =sc.next().charAt (0);
+	switch(shape)
+	{
+	case 'c': System.out.println("Enter radius:");
+
+                   float r=sc.nextFloat();
+
+                   float ac=3.14f*r*r;
+
+                   System.out.println("Area:"+ac);
+
+                   break;
+                   case'r':System.out.println("Enter length");
+                   System.out.println("enter breath");
+                                           
+                   int x=sc.nextInt();
+                   int y=sc.nextInt();
+                   int as=x*y;
+                   System.out.println("Area:"+as);
+                   break;
+                   case 't':
+                   System.out.println("enter the height ");
+                   System.out.println("enter the base ");
+                   float h=sc.nextFloat();
+                   float b =sc.nextFloat();
+                   float ab=0.5f*h*b;
+                   System.out.println("Area:"+ab);
+                   break;
+	}
+
+	}
+}

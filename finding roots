@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+
+public class Quadratic {
+
+  
+    public static void main(String[] args) {
+
+        double a,b,c,d,r;
+       
+        Scanner s = new Scanner(System.in);
+        System.out.println("enter the a term: ");
+        
+        a = s.nextDouble();
+        System.out.println("enter the b term: ");
+        b = s.nextDouble();
+        System.out.println("enter the c term: ");
+        c = s.nextDouble();
+        
+        d = Math.pow(b,2) - 4*a*c;
+        
+        if(d == 0){
+            System.out.println("Root:");
+            r = (-b)/(2*a);
+            System.out.println(r);
+        }
+        else if (d > 0){
+            System.out.println("Roots:");
+            
+            r = ((-b) + d)/(2*a);
+            System.out.println(r);
+
+            r = ((-b) - d)/(2*a);
+            System.out.println(r);
+
+        }
+        else {
+            System.out.println("The equation has no real roots.");
+        }
+        
+        
+    }
+}

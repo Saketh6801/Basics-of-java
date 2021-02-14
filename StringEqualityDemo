@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class StringEqualityDemo
+{
+public static void main(String[]args)
+{
+	String s1,s2;
+	System.out.println("enter the two line txt:");
+	Scanner in = new Scanner(System.in);
+	s1=in.nextLine();
+	s2=in.nextLine();
+	if(s1.equals(s2))
+	System.out.println("the two lines are equal.");
+	else
+	System.out.println("the two lines are not equal");
+	if (s2.equals(s1))
+	System.out.println("the two lines are equal");
+	else 
+	System.out.println("the two lines are not equal");
+	if(s1.equalsIgnoreCase(s2))
+	System.out.println("if case are ignored,the lines are same");
+	else
+	System.out.println("if case are ignored,the lines are not same");
+
+}
+}

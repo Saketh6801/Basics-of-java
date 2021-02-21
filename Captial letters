@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Capital{
+	public static void main(String[]args){
+	Scanner sc =new Scanner(System.in);
+	System.out.println("enter the name: ");
+	String A= sc.nextLine();
+	String B =sc.nextLine();
+	String output = A.substring(0).toUpperCase() + B.substring(0).toUpperCase();
+	System.out.println("user name"+output);
+	}
+}
